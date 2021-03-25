@@ -1,0 +1,20 @@
+version: '3'
+services:
+  client001:
+    build:
+      context: ./
+      dockerfile: ./client001/Dockerfile
+    container_name: client001
+    hostname: client001
+    stdin_open: true
+
+    volumes:
+      - ../:/workspace/
+      # - ./_hostkeys/client001/:/tmp/hostkeys/
+  
+  sftp001:
+    build:
+      context: ./
+      dockerfile: ./sftp001/Dockerfile
+    container_name: sftp001
+    hostname: sftp001
