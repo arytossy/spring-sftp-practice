@@ -10,7 +10,7 @@ services:
 
     volumes:
       - ../:/workspace/
-      # - ./_hostkeys/client001/:/tmp/hostkeys/
+      - ../.m2/:/root/.m2/
   
   sftp001:
     build:

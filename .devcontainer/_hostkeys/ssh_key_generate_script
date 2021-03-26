@@ -1,0 +1,4 @@
+ssh-keygen -m pem -t rsa -N "" -f .devcontainer/_hostkeys/client001/ssh_host_rsa_key
+ssh-keygen -m pem -t rsa -N "" -f .devcontainer/_hostkeys/sftp001/ssh_host_rsa_key
+ssh-keygen -m pem -t ecdsa -N "" -f .devcontainer/_hostkeys/sftp001/ssh_host_ecdsa_key
+ssh-keygen -m pem -t ed25519 -N "" -f .devcontainer/_hostkeys/sftp001/ssh_host_ed25519_key
